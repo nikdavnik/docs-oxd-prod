@@ -166,10 +166,13 @@ $ sudo apt-get remove oxd-server
 
 ### View, delete entries inside oxd-server database with lsox.sh or lsox.bat scripts
 
+oxd-server has to be stopped during run of lsox.sh or lsox.bat scripts. Otherwise database is locked by oxd-server and script will not be able to access it.
+
 There are three type of parameters which can be used by lsox.sh/lsox.bat files:
  - `-l` - list all oxd_ids inside oxd database
  - `-oxd_id <oxd_id>` - view JSON representation of the entity by oxd_id
  - `-d` - removes entity by oxd_id.
+ - `-c` - path to `oxd-server.yml` configuration file
 
 Script is located in `/opt/oxd-server/bin/lsox.sh`. If hit script without parameters it show hint
 ```
@@ -188,7 +191,7 @@ usage: utility-name
 
 Typical call looks as
 ```
-yuriy@yuriyz:~/oxd-server-3.1.4-SNAPSHOT-distribution/bin$ sh oxd-show.sh -oxd_id d8cc6dea-4d66-4995-b6e1-da3a33722f2e
+yuriy@yuriyz:~/oxd-server-3.1.4-SNAPSHOT-distribution/bin$ sh oxd-show.sh -oxd_id d8cc6dea-4d66-4995-b6e1-da3a33722f2e -c oxd-server.yml
 BASEDIR=.
 CONF=./../conf/oxd-conf.json
 
