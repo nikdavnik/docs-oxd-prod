@@ -16,7 +16,7 @@ oxd needs to be deployed on a server or VM with the following **minimum** requir
 # echo "deb https://repo.gluu.org/ubuntu/ trusty main" > /etc/apt/sources.list.d/gluu-repo.list
 # curl https://repo.gluu.org/ubuntu/gluu-apt.key | apt-key add -
 # apt-get update
-# apt-get install gluu-oxd-server
+# apt-get install gluu-oxd-server=3.0.1-*
 ```
 Now configure oxd following the [configuration instructions](../conf/index.md). 
 
@@ -31,7 +31,7 @@ Then run the following command to start the oxd server:
 echo "deb https://repo.gluu.org/ubuntu/ xenial main" > /etc/apt/sources.list.d/gluu-repo.list
 curl https://repo.gluu.org/ubuntu/gluu-apt.key | apt-key add -
 apt-get update
-apt-get install gluu-oxd-server
+apt-get install gluu-oxd-server=3.0.1-*
 ```
 Now configure oxd following the [configuration instructions](../conf/index.md). 
 
@@ -45,7 +45,7 @@ Then run the following command to start the oxd server:
 echo "deb https://repo.gluu.org/debian/ jessie main" > /etc/apt/sources.list.d/gluu-repo.list
 curl https://repo.gluu.org/debian/gluu-apt.key | apt-key add -
 apt-get update
-apt-get install gluu-oxd-server
+apt-get install gluu-oxd-server=3.0.1-*
 ```
 Now configure oxd following the [configuration instructions](../conf/index.md). 
 
@@ -60,7 +60,7 @@ Then run the following command to start the oxd server:
 # wget https://repo.gluu.org/centos/RPM-GPG-KEY-GLUU -O /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # yum clean all
-# yum install gluu-oxd-server
+# yum install gluu-oxd-server-3.0.1
 ```
 Now configure oxd following the [configuration instructions](../conf/index.md). 
 
@@ -75,7 +75,7 @@ Then run the following command to start the oxd server:
 # wget https://repo.gluu.org/centos/RPM-GPG-KEY-GLUU -O /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # yum clean all
-# yum install gluu-oxd-server
+# yum install gluu-oxd-server-3.0.1
 ```
 Now configure oxd following the [configuration instructions](../conf/index.md). 
 
@@ -90,7 +90,7 @@ Then run the following command to start the oxd server:
 # wget https://repo.gluu.org/rhel/RPM-GPG-KEY-GLUU -O /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # yum clean all
-# yum install gluu-oxd-server
+# yum install gluu-oxd-server-3.0.1
 ```
 Now configure oxd following the [configuration instructions](../conf/index.md). 
 
@@ -105,7 +105,7 @@ wget https://repo.gluu.org/rhel/Gluu-rhel7.repo -O /etc/yum.repos.d/Gluu.repo
 wget https://repo.gluu.org/rhel/RPM-GPG-KEY-GLUU -O /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 yum clean all
-yum install gluu-oxd-server
+yum install gluu-oxd-server-3.0.1
 ```
 Now configure oxd following the [configuration instructions](../conf/index.md). 
 
