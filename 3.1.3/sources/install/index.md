@@ -37,7 +37,7 @@ Step 4: To support RESTful (https) calls to your `oxd-server`, you can now move 
 echo "deb https://repo.gluu.org/ubuntu/ trusty main" > /etc/apt/sources.list.d/gluu-repo.list
 curl https://repo.gluu.org/ubuntu/gluu-apt.key | apt-key add -
 apt-get update
-apt-get install oxd-server-3.1.3-*
+apt-get install oxd-server=3.1.3-*
 ```
 
 ### Ubuntu 16.04 (xenial)
@@ -46,7 +46,7 @@ apt-get install oxd-server-3.1.3-*
 echo "deb https://repo.gluu.org/ubuntu/ xenial main" > /etc/apt/sources.list.d/gluu-repo.list
 curl https://repo.gluu.org/ubuntu/gluu-apt.key | apt-key add -
 apt-get update
-apt-get install oxd-server-3.1.3-*
+apt-get install oxd-server=3.1.3-*
 ```
 
 ### Debian 8 (Jessie)
@@ -55,7 +55,7 @@ apt-get install oxd-server-3.1.3-*
 echo "deb https://repo.gluu.org/debian/ jessie main" > /etc/apt/sources.list.d/gluu-repo.list
 curl https://repo.gluu.org/debian/gluu-apt.key | apt-key add -
 apt-get update
-apt-get install oxd-server-3.1.3-*
+apt-get install oxd-server=3.1.3-*
 ```
 
 ### CentOS 6
