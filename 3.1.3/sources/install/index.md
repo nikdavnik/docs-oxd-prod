@@ -52,7 +52,7 @@ apt-get install oxd-server=3.1.3-*
 ### Debian 8 (Jessie)
 
 ```
-echo "deb https://repo.gluu.org/debian/ jessie main" > /etc/apt/sources.list.d/gluu-repo.list
+echo "deb https://repo.gluu.org/debian/ stable main" > /etc/apt/sources.list.d/gluu-repo.list
 curl https://repo.gluu.org/debian/gluu-apt.key | apt-key add -
 apt-get update
 apt-get install oxd-server=3.1.3-*
